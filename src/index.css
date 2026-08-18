@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050505;
+  --card: #0d0d0d;
+  --card-elevated: #121212;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-accent: rgba(156, 132, 97, 0.3);
+  --accent: #9c8461;
+  --accent-light: #c4aa82;
+  --accent-glow: rgba(156, 132, 97, 0.12);
+  --text-p: #e5e5e5;
+  --text-s: #737373;
+}
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.06);
+  }
+  
+  html {
+    color-scheme: dark;
+    background-color: var(--bg);
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text-p);
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9c8461;
+}
+
+.glow-gold {
+  box-shadow: 0 0 25px -5px rgba(156, 132, 97, 0.25);
+}
+
+.glow-gold-lg {
+  box-shadow: 0 0 45px -10px rgba(156, 132, 97, 0.35);
+}
+
+.card-sophisticated {
+  background-color: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-sophisticated:hover {
+  border-color: rgba(156, 132, 97, 0.3);
+}
+
